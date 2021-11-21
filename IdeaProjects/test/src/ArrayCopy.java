@@ -1,4 +1,6 @@
-public class Test{
+import java.util.Arrays;
+
+public class ArrayCopy {
     public static void main(String[] args){
         int[] a = new int[10];
         // <==> int[] a = {...}
@@ -16,9 +18,15 @@ public class Test{
         System.out.println();
 
         System.arraycopy(b, 0, a, 5, 5); //b拼接到a后
+        int[] c = Arrays.copyOfRange(b, 0, 5); //b复制到c
 
-        for(int i = 0; i < 10; i++)
-            System.out.print(a[i] + " ");
+        System.out.print("a + b: ");
+        for(int each : a)
+            System.out.print(each + " ");
+        System.out.println();
+        System.out.print("c: ");
+        for(int each : c)
+            System.out.print(each + " ");
         System.out.println();
     }
 }
