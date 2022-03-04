@@ -1,13 +1,13 @@
 public class Circle extends Shape{
-    double r;
+    private double r;
 
-    public  Circle(String s, double x) {
-        this.name = s;
-        this.r = x;
+    public Circle(String name, double r) {
+        this.setName(name);
+        this.r = r;
     }
 
     public double area() {
-        this.area = PI * r * r;
-        return this.area;
+        this.setArea(PI * r * r);
+        return this.getArea();
     }
 }
