@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Spiral {
    public static void main(String [] args) {
-      Scanner in = new Scanner(System.in);
+      Scanner in = new Scanner(System.in);0
       int n = in.nextInt();
       in.close();
 
